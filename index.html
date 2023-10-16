@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artilleros</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header class="header">
+        <img src="./assets/img/logo.jpg" alt="Logo">
+        <nav class="header-nav">
+            <ul class="header-links">
+                <li><a href="#info">Info</a></li>
+                <li><a href="#banda">Banda</a></li>
+                <li><a href="#contact">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Portada - Corro | Videoclip  -->
+        <section class="hero-video">
+            <video src="./assets/video/corro-videoclip.mp4" autoplay loop muted>
+            </video>
+        </section>
+        <!-- Presentacion - Titulo, Info y Video -->
+        <div class="hero" id="info"> 
+                <h1>Artilleros |</h1>     
+            <div class="hero-info">
+                <h4>
+                    Bienvenido, queremos que seas parte de esta familia
+                </h4>
+                <p>
+                    Aqui podras encontrar todo sobre nosotros, quienes somos,
+                    nuestras canciones y letras, proximas fechas y más.. 
+                    <span>acompañanos en este viaje</span>
+                </p>
+            </div>
+        </div>
+        <!-- About - info Extra Acerca de Como se Formo la Banda -->
+        <div class="about">
+            <p>Artilleros es un proyecto musical que empezo en el año 2016 aproximadamente, en su comienzo Jonatan (Aka ~ Artillero) salia a cantar con pistas el estilo de musica RAP. En menos de un año de haber comenzado se formo la banda completa con 5 integrantes en total, acutalmente formada por <a href="#Jonatan">Jonatan (Voz)</a>, <a href="#Jose">Jose (Voz y Bajo)</a>, <a href="#Cristian">Cristian (Guitarra)</a>, <a href="#Pablo">Pablo (Teclado)</a> y <a href="#Angel">Angel (Bateria)</a>. De ahi la banda tomo otro rumbo donde ya no era solo rap lo que se cantaba sino que empezo a fusionar con música: POP - ROCK - FUNKY. Desde entonces Artilleros lleva un mensaje esperanzador enfocado en alcanzar todo tipo de generaciones no solo a la juventud como suele pasar con las bandas emergentes. 
+            Sus metas desde los comienzos fueron siempre las mismas llevar un <span>mensaje de esperanza</span> a aquellas personas que quieren escucharlo sin oprimir ni obligar a nadie a consumir su musica! Se podria decir que Artilleros hace musica "Cristiana" aunque la musica como tal no tiene definiciones ni religiosas o secular. Simplemente es musica con un mensaje diferente y ahi apunta Artilleros a dar un mensaje distinto al que se consume comúnmente en las redes y en nuestra actualidad.
+            </p>
+        </div>
+
+        <!-- Banda - integrantes (Cards) -->
+
+        <div id="banda">
+            <h2>Integrantes</h2>
+            <div class="integrantes">
+                <div class="card" id="Jonatan">
+                    <img src="./assets/img/Jonatan.jpg" alt="Jona">
+                    <div class="card-info">
+                        <h3>
+                            Jonatan Accursio | Voz
+                        </h3>
+                        <ul>
+                            <li>Edad: 30 Años</li>
+                            <li>Hobby: </li>
+                            <li>Frase: </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card" id="Jose">
+                    <img src="./assets/img/Jose.jpeg" alt="Jose">
+                    <div class="card-info">
+                        <h3>
+                            Jose Accursio | Bajo & Voz
+                        </h3>
+                        <ul>
+                            <li>Edad: 30 Años</li>
+                            <li>Hobby: </li>
+                            <li>Frase: </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card" id="Cristian">
+                    <img src="./assets/img/Cristian.jpg" alt="Cristian">
+                    <div class="card-info">
+                        <h3>
+                            Cristian Luna | Guitarra
+                        </h3>
+                        <ul>
+                            <li>Edad: 30 Años</li>
+                            <li>Hobby: </li>
+                            <li>Frase: </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card" id="Pablo">
+                    <img src="./assets/img/Pablo.jpeg" alt="Pablo">
+                    <div class="card-info">
+                        <h3>
+                            Pablo Gonzalez | Teclado
+                        </h3>
+                        <ul>
+                            <li>Edad: 30 Años</li>
+                            <li>Hobby: </li>
+                            <li>Frase: </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card" id="Angel">
+                    <img src="./assets/img/Angel.jpg" alt="Angel">
+                    <div class="card-info">
+                        <h3>
+                            Angel Fernandez | Bateria
+                        </h3>
+                        <ul>
+                            <li>Edad: 30 Años</li>
+                            <li>Hobby: </li>
+                            <li>Frase: </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulario - Contactanos -->
+
+        <div id="contact">
+            <form class="form-contact">
+                <h2>Contactanos</h2>
+                <div class="input-group">
+                    <label for="name"></label>
+                    <input type="text" id="name" placeholder="Nombre" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone"></label>
+                    <input type="tel" id="phone" placeholder="Télefono" required>
+                </div>
+                <div class="input-group">
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <label for="message"></label>
+                    <textarea id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="terminosycondiciones" required>
+                    <label for="terminosycondiciones">Acepto que la información provista es válida.</label>
+                </div>
+                <div>
+                    <button class="btn">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer - Pie de Pagina - Redes y Más -->
+
+    <footer class="footer">
+        <nav class="nav-footer">
+            <ul>
+                <li><a href="">Seguinos</a></li>
+                <li><a href="https://www.instagram.com/artilleros_oficial/" target="_blank">Intagram</a></li>
+                <li><a href="https://www.youtube.com/@artilleros_" target="_blank">Youtube</a></li>
+                <li><a href="https://open.spotify.com/intl-es/artist/1nIhpImgwgSQTfhJ4BcAUX?si=W5ZSRoWKSQq4dydQcPb_1A" target="_blank">Spotify</a></li>
+            </ul>
+        </nav>
+
+    </footer>
+
+</body>
+</html>

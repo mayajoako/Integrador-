@@ -31,6 +31,15 @@
     gap: 70px;
 }
 
+.header-nav i {
+    font-size: 70px;
+    display: none;
+}
+
+#toggle-menu {
+    display: none;
+}
+
 .header img {
     margin: 25px 0;
     padding: 10px;;
@@ -73,7 +82,7 @@
 
 .hero {
     margin: 0 5rem 0 5rem;
-    padding: 15rem;
+    padding: 15rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,6 +246,7 @@
 
 .footer {
     height: 250px;
+    width: 100%;
     background-color: #232323;
     display: flex;
     align-items: center;
@@ -266,5 +276,114 @@
     text-transform: uppercase;
 }
 
+@media (max-width: 1080px) {
 
+    .header {
+        margin: 0;
+        padding: 0;
+        height: 150px;
+        max-width: 100%;
+        padding: 25px;
+        gap: 10px;
+    }
 
+    .header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .hero {
+        margin: 50px;
+        padding: 50px;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .hero-info {
+        text-align: center;
+    }
+
+    .hero-info p {
+        max-width: 450px;
+    }
+
+    .about {
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        text-align: left;
+        background-color: #ebebeb35;
+        border: solid 1px #2323231d;
+        border-radius: 5px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.11);
+    }
+
+    .about p {
+        width: 800px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        background-color: white;
+        position: sticky;
+        top: 0;
+    }
+
+    .header img {
+        border: none;
+        width: 100px;
+        height: 100px;
+    }
+
+    .header ul {
+        background-color: rgb(0, 0, 0);
+        width: 100vw;
+        height: calc( 100vh - 150px);
+        position: absolute;
+        top: 150px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        transform: translatex(200%);
+        transition: all 0.4s ease-out;
+        display: none;
+    }
+
+    .header-nav i {
+        display: block;
+    }
+
+    #toggle-menu:checked + .header-links {
+        transform: translateX(0%);
+        transition: all 0.4s ease-in;
+        display: flex;
+        background-color: white;
+    }
+
+    .header-links a {
+        color: black;
+        font-weight: 600;
+
+    }
+
+    .hero {
+        margin: 25px;
+    }
+
+    .about {
+        margin: 25PX;
+        Max-width: 750px;
+        
+    }
+
+    .form-contact {
+        margin: 100px 25px;
+    }
+
+}

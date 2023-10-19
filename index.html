@@ -11,14 +11,20 @@
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <header class="header">
+
+        <!-- Header -->
+
+    <header id="inicio" class="header">
         <img src="./assets/img/logo.jpg" alt="Logo">
         <nav class="header-nav">
             <label for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
             <input type="checkbox" id="toggle-menu">
             <ul class="header-links">
+                <li><a href="#">Inicio</a></li>
                 <li><a href="#info">Info</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#banda">Banda</a></li>
                 <li><a href="#contact">Contactanos</a></li>
             </ul>
@@ -26,30 +32,49 @@
     </header>
 
     <main class="main">
+
         <!-- Portada - Corro | Videoclip  -->
+
         <section class="hero-video">
             <video src="./assets/video/corre-videoclip.mp4" autoplay loop muted>
             </video>
         </section>
+
         <!-- Presentacion - Titulo, Info y Video -->
-        <div class="hero" id="info"> 
-                <h1>Artilleros</h1>     
-            <div class="hero-info">
-                <h4>
-                    Bienvenido, queremos que seas parte de esta familia
-                </h4>
-                <p>
-                    Aqui podras encontrar todo sobre nosotros, quienes somos,
-                    nuestras canciones y letras, proximas fechas y más.. 
-                    <span>acompañanos en este viaje</span>
+
+        <div id="info">
+            <div class="hero"> 
+                    <h1>Artilleros</h1>     
+                <div class="hero-info">
+                    <h4>
+                        Bienvenido, queremos que seas parte de esta familia
+                    </h4>
+                    <p>
+                        Aqui podras encontrar todo sobre nosotros, quienes somos,
+                        nuestras canciones y letras, proximas fechas y más.. 
+                        <span>acompañanos en este viaje</span>
+                    </p>
+                </div>
+                <div class="hero-redes">
+                    <a href="https://www.instagram.com/artilleros_oficial/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a href="https://www.youtube.com/@artilleros_" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a>
+                    <a href="https://open.spotify.com/intl-es/artist/1nIhpImgwgSQTfhJ4BcAUX?si=W5ZSRoWKSQq4dydQcPb_1A" target="_blank"><i class="fa-brands fa-spotify fa-xl"></i></a>
+                </div>
+            </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iyVGKumN0sY?si=wnTkxfalKFtVJuVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+            <!-- About - info Extra Acerca de Como se Formo la Banda -->
+
+        <div id="nosotros">
+
+        </div>
+            <div class="about">
+                <h2>Nosotros</h2>
+                <p>Artilleros es un proyecto musical que empezo en el año 2016 aproximadamente, en su comienzo Jonatan (Aka ~ Artillero) salia a cantar con pistas el estilo de musica RAP. En menos de un año de haber comenzado se formo la banda completa con 5 integrantes en total, acutalmente formada por Jonatan (Voz), Jose (Voz y Bajo), Cristian (Guitarra), Pablo (Teclado) y Angel (Bateria). De ahi la banda tomo otro rumbo donde ya no era solo rap lo que se cantaba sino que empezo a fusionar con música: POP - ROCK - FUNKY. Desde entonces Artilleros lleva un mensaje esperanzador enfocado en alcanzar todo tipo de generaciones no solo a la juventud como suele pasar con las bandas emergentes. 
+                Sus metas desde los comienzos fueron siempre las mismas llevar un <span>mensaje de esperanza</span> a aquellas personas que quieren escucharlo sin oprimir ni obligar a nadie a consumir su musica! Se podria decir que Artilleros hace musica "Cristiana" aunque la musica como tal no tiene definiciones ni religiosas o secular. Simplemente es musica con un mensaje diferente y ahi apunta Artilleros a dar un mensaje distinto al que se consume comúnmente en las redes y en nuestra actualidad.
                 </p>
             </div>
-        </div>
-        <!-- About - info Extra Acerca de Como se Formo la Banda -->
-        <div class="about">
-            <p>Artilleros es un proyecto musical que empezo en el año 2016 aproximadamente, en su comienzo Jonatan (Aka ~ Artillero) salia a cantar con pistas el estilo de musica RAP. En menos de un año de haber comenzado se formo la banda completa con 5 integrantes en total, acutalmente formada por <a href="#Jonatan">Jonatan (Voz)</a>, <a href="#Jose">Jose (Voz y Bajo)</a>, <a href="#Cristian">Cristian (Guitarra)</a>, <a href="#Pablo">Pablo (Teclado)</a> y <a href="#Angel">Angel (Bateria)</a>. De ahi la banda tomo otro rumbo donde ya no era solo rap lo que se cantaba sino que empezo a fusionar con música: POP - ROCK - FUNKY. Desde entonces Artilleros lleva un mensaje esperanzador enfocado en alcanzar todo tipo de generaciones no solo a la juventud como suele pasar con las bandas emergentes. 
-            Sus metas desde los comienzos fueron siempre las mismas llevar un <span>mensaje de esperanza</span> a aquellas personas que quieren escucharlo sin oprimir ni obligar a nadie a consumir su musica! Se podria decir que Artilleros hace musica "Cristiana" aunque la musica como tal no tiene definiciones ni religiosas o secular. Simplemente es musica con un mensaje diferente y ahi apunta Artilleros a dar un mensaje distinto al que se consume comúnmente en las redes y en nuestra actualidad.
-            </p>
         </div>
 
         <!-- Banda - integrantes (Cards) -->
@@ -57,7 +82,7 @@
         <div id="banda">
             <h2>Integrantes</h2>
             <div class="integrantes">
-                <div class="card" id="Jonatan">
+                <div class="card">
                     <img src="./assets/img/Jonatan.jpg" alt="Jona">
                     <div class="card-info">
                         <h3>
@@ -70,7 +95,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="card" id="Jose">
+                <div class="card">
                     <img src="./assets/img/Jose.jpeg" alt="Jose">
                     <div class="card-info">
                         <h3>
@@ -83,7 +108,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="card" id="Cristian">
+                <div class="card">
                     <img src="./assets/img/Cristian.jpg" alt="Cristian">
                     <div class="card-info">
                         <h3>
@@ -96,7 +121,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="card" id="Pablo">
+                <div class="card">
                     <img src="./assets/img/Pablo.jpeg" alt="Pablo">
                     <div class="card-info">
                         <h3>
@@ -109,7 +134,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="card" id="Angel">
+                <div class="card">
                     <img src="./assets/img/Angel.jpg" alt="Angel">
                     <div class="card-info">
                         <h3>

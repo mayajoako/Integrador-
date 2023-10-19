@@ -13,16 +13,13 @@
     scroll-behavior: smooth;
 }
 
-/* body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
+/* HEADER - MENU - LOGO */
 
 .header {
-    height: 250px;
+    height: 100px;
     width: 100%;
+    position:sticky;
+    top: 0;
     padding: 0 75px;
     display: flex;
     align-items: center;
@@ -32,8 +29,9 @@
 }
 
 .header-nav i {
-    font-size: 70px;
+    font-size: 25px;
     display: none;
+    color: #ffffff;
 }
 
 #toggle-menu {
@@ -43,15 +41,14 @@
 .header img {
     margin: 25px 0;
     padding: 10px;;
-    height: 200px;
-    border-radius: 50%;
-    border: solid #23232373 2.5px
+    height: 100px;
 }
 
 .header-links {
     display: flex;
     gap: 70px;
     cursor: pointer;
+    transition: all 2s;
 }
 
 .header-links a {
@@ -59,76 +56,126 @@
     font-size: large;
 }
 
+.header-links a:checked 
+
 .header-links li {
     padding: 10px 25px;
-    transition: all 1.5s;
+    transition: all 2s;
 }
 
 .header-links li:hover {
-    border-bottom: solid 1.5px rgba(147, 86, 86, 0.492) ;
-    background-color: #1716163b;
-    border-radius: 5px ;
-    transition: all .5s;
+    border-bottom: solid 1.5px red ;
+    transition: all 2s;
 }
 
-.hero-video {
-    margin-bottom: 25px;
-}
+/* HERO & PORTADA - VIDEO e INFO */
 
 .hero-video video {
     width: 100%;
 }
 
-
-.hero {
-    margin: 0 5rem 0 5rem;
-    padding: 15rem 0;
+#info {
+    padding-top: 150px;
+    padding-bottom: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
-    cursor: pointer;
-    border: solid 1px #2323234e;
-    border-radius: 5px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-bottom: solid 2px rgb(229, 121, 121);
+    box-shadow: 0 0 20px rgba(226, 12, 12, 0.555);
+    color: black;
+    gap: 25px;
+}
 
+#info iframe {
+    border-radius: 15px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    cursor: pointer;
+}
+
+.hero h1 {
+    transition: all 2s;
 }
 
 .hero h1:hover {
-    color: rgba(0, 0, 0, 0.784);
+    color: crimson;
+    transition: all 2s;
 }
 
 .hero-info {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 5px;
 }
 
 .hero-info p {
-    max-width: 600px;
+    max-width: 400px;
+    transition: all 2s;
+}
+
+.hero-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.hero-redes a:first-child {
+    color: rgb(155, 34, 54);
+}
+
+.hero-redes a:nth-child(2) {
+    color: #e60f0f;
+}
+
+.hero-redes a:last-child {
+    color: #38a11b;
+}
+
+/* NOSOTROS - ABOUT - INFO ADICIONAL */
+
+#nosotros {
+    padding-top: 100px;
 }
 
 .about {
-    margin: 1rem 10rem 1rem 10rem ;
+    margin: 0 10px 100px 10px;;
     padding: 20px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: black;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2rem;
 }
 
 .about span {
-    color: black;
+    color: crimson;
     font-weight: 600;
     text-transform:uppercase;
 }
 
-.about a {
-    text-decoration: none;
-    color: black;
+.about p {
+    max-width: 1020px;
+    font-size: 1.25rem
 }
+
+/* BANDA - INTEGRANTES & CARDS */
 
 
 #banda {
-    padding: 40px;
+    padding-top: 100px;
     background-color: rgb(0, 0, 0);
     margin: 0 2px;
     display: flex;
@@ -141,6 +188,7 @@
 }
 
 .integrantes {
+    padding-bottom: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,7 +209,7 @@
 }
 
 .card:hover {
-    background-color: rgba(229, 237, 234, 0.188);
+    background-color: rgba(220, 20, 60, 0.101);
     transition: all 1.5s;
 }
 
@@ -171,6 +219,8 @@
     height: 300px;
     border-radius: 15px;
 }
+
+/* FORMULARIO - CONTACTO */
 
 #contact {
     display: flex;
@@ -213,16 +263,16 @@
     max-width: 100%;
     min-width: 100%;
     min-height: 120px;
-    max-height: 240px;
+    max-height: 120px;
 }
 
 .input-group input:hover {
-    background-color: rgba(245, 245, 220, 0.19); 
+    background-color: rgba(220, 20, 60, 0.02); 
     transition: all 1s;
 }
 
 .input-group textarea:hover {
-    background-color: rgba(245, 245, 220, 0.19);
+    background-color: rgba(220, 20, 60, 0.02);
     transition: all 1s;
 }
 
@@ -231,7 +281,6 @@
     height: 35px;
     border-radius: 7px;
     border: solid 1px #1716163b;
-    box-shadow: 0 0 10px rgba(88, 84, 84, 0.195);
     background-color: #692a2a27;
     color: grey;
     font-weight: 600;
@@ -239,7 +288,7 @@
 }
 
 .btn:hover {
-    background-color: rgba(128, 128, 128, 0.364);
+    background-color: rgba(220, 20, 60, 0.02);
     color: rgb(34, 31, 31);
     transition: all 1.5s;
 }
@@ -281,20 +330,31 @@
     .header {
         margin: 0;
         padding: 0;
-        height: 150px;
+        height: 75px;
         max-width: 100%;
         padding: 25px;
         gap: 10px;
     }
 
     .header img {
-        width: 100px;
-        height: 100px;
+        height: 75px;
+    }
+
+    .header-links {
+        gap: 25px;
+    }
+
+    #info {
+        padding-top: 100px;
+        padding-bottom: 0px;
+        flex-direction: column;
+        margin: 0;
+        border-radius: 0;
+        border: 0;
+        box-shadow: none;
     }
 
     .hero {
-        margin: 50px;
-        padding: 50px;
         flex-direction: column;
         gap: 25px;
     }
@@ -304,23 +364,33 @@
     }
 
     .hero-info p {
-        max-width: 450px;
+        max-width: 600px;
+        text-align: left;
+    }
+
+    #nosotros {
+        padding-top: 75px;
     }
 
     .about {
-        padding: 40px;
         display: flex;
         justify-content: center;
         margin-bottom: 50px;
-        text-align: left;
-        background-color: #ebebeb35;
-        border: solid 1px #2323231d;
-        border-radius: 5px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.11);
     }
 
     .about p {
-        width: 800px;
+        max-width: 600px;
+        font-size: 1rem;
+    }
+
+    #banda {
+        margin: 25px;
+        border-radius: 15px;
+        background-color: #232323;
+    }
+
+    .form-contact {
+        margin-top: 50px;
     }
 
 }
@@ -328,28 +398,26 @@
 @media (max-width: 768px) {
 
     .header {
-        background-color: white;
         position: sticky;
         top: 0;
     }
 
     .header img {
         border: none;
-        width: 100px;
-        height: 100px;
+        height: 75px;
     }
 
-    .header ul {
-        background-color: rgb(0, 0, 0);
+    .header-nav ul {
+        background-color: white;
         width: 100vw;
-        height: calc( 100vh - 150px);
+        height: calc( 100vh - 75px);
         position: absolute;
-        top: 150px;
+        top: 75px;
         left: 0;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 100px;
+        gap: 70px;
         transform: translatex(200%);
         transition: all 0.4s ease-out;
         display: none;
@@ -359,31 +427,61 @@
         display: block;
     }
 
-    #toggle-menu:checked + .header-links {
+    #toggle-menu:checked ~ .header-links {
         transform: translateX(0%);
         transition: all 0.4s ease-in;
         display: flex;
-        background-color: white;
     }
 
     .header-links a {
         color: black;
-        font-weight: 600;
+    }
 
+    .header-links a:active ~ .header-nav ul {
+        display: none;
+    }
+
+    .header-links li:nth-child(3) {
+        display: none;
     }
 
     .hero {
         margin: 25px;
     }
 
+    #nosotros {
+        display: none;
+    }
+
     .about {
-        margin: 25PX;
-        Max-width: 750px;
-        
+        display: none;
     }
 
     .form-contact {
         margin: 100px 25px;
     }
 
+}
+
+@media (max-width: 615px) {
+
+    #info iframe {
+        display: none;
+    }
+
+    #banda {
+        padding: 0;
+        margin: 0;
+        background-color: white;
+        color: black;
+    }
+
+    .card {
+        color: black;
+    }
+
+   .form-contact {
+    margin: 0 10px 60px 10px;
+    padding: 5;
+   }
 }

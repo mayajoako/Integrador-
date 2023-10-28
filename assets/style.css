@@ -11,10 +11,13 @@
 :root {
     font-family: 'Syne', sans-serif;
     scroll-behavior: smooth;
+}
+
+html {
     overflow-x: hidden;
 }
 
-/* HEADER - MENU - LOGO - FINALgit  */
+/* HEADER - MENU - LOGO - FINALgit git */
 
 .header {
     height: 100px;

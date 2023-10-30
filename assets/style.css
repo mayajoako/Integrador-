@@ -450,6 +450,7 @@ body {
         gap: 70px;
         transform: translateX(200%);
         transition: all .5s ease-out;
+        display: none;
     }
 
     .h-navbar i {
@@ -460,6 +461,7 @@ body {
     #toggle-menu:checked ~ .h-navbar__items {
         transform: translateX(0%);
         transition: all .5s ease-in;
+        display: flex;
     }
 
     .h-navbar__items a {

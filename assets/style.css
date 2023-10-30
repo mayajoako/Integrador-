@@ -12,7 +12,7 @@
 :root {
     font-family: 'Syne', sans-serif;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 body {

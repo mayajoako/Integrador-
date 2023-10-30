@@ -152,8 +152,12 @@ body {
     transition: all 1.5s;
 }
 
-.hero__video video {
+.hero__video {
     width: 100%;
+}
+
+.hero__video video {
+    max-width: 100%;
 }
 
 /* NOSOTROS - ABOUT - INFO ADICIONAL */

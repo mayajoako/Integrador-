@@ -12,14 +12,7 @@
 :root {
     font-family: 'Syne', sans-serif;
     scroll-behavior: smooth;
-    /* overflow-x: hidden; */
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    overflow-x: hidden;
 }
 
 /* HEADER - MENU - LOGO - FINAL*/
@@ -89,6 +82,13 @@ body {
 
 /* HERO & PORTADA - VIDEO e INFO */
 
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #hero {
     margin: 150px 25px;
     padding: 10px;;
@@ -96,7 +96,7 @@ body {
     justify-content: center;
     align-items: center;
     color: black;
-    gap: 25px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -152,12 +152,8 @@ body {
     transition: all 1.5s;
 }
 
-.hero__video {
-    width: 100%;
-}
-
 .hero__video video {
-    max-width: 100%;
+    width: 100%;
 }
 
 /* NOSOTROS - ABOUT - INFO ADICIONAL */
@@ -224,7 +220,7 @@ body {
 }
 
 .card:hover {
-    background-color: rgba(46, 36, 36, 0.127);
+    background-color: rgba(225, 98, 98, 0.056);
     transition: all 1.5s;
 }
 

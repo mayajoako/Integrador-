@@ -24,3 +24,12 @@ body {
     font-weight: 400;
     color: black;
 }
+
+.h-navbar__items {
+    display: none;
+}
+
+.h-navbar i {
+    display: block;
+    color: white;
+}

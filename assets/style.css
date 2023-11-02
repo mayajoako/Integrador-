@@ -15,6 +15,12 @@
     overflow-x: hidden;
 }
 
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
 /* HEADER - MENU - LOGO - FINAL*/
 
 .header {
@@ -90,7 +96,7 @@
 }
 
 #hero {
-    margin: 150px 25px;
+    margin: 150px auto;
     padding: 10px;;
     display: flex;
     justify-content: center;
@@ -106,6 +112,7 @@
     -webkit-animation: fadein 1.5s forwards, scale 1.5s ease-in-out;
             animation: fadein 1.5s forwards, scale 1.5s ease-in-out;
     transition: all 2.5s;
+    max-width: 450px;
 }
 
 .hero__info {
@@ -114,6 +121,7 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
+    max-width: 450px;
 }
 
 .hero__title {
@@ -159,14 +167,14 @@
 /* NOSOTROS - ABOUT - INFO ADICIONAL */
 
 #bio {
-    padding: 150px 25px;
+    padding: 150px 25px 0 25px;
 }
 
 .bio__info {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 200px;
+    gap: 175px;
     color: black;
 }
 
@@ -183,40 +191,78 @@
     text-transform:uppercase;
 }
 
+/* Spotify - Lista de Reproducción */
+
+.list_spotify {
+    margin: 150px 0;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.048);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.list_spotify iframe {
+    width: 400px;
+}
+
+.list_spotify--title {
+    font-weight: 400;
+}
+
 /* BANDA - INTEGRANTES & CARDS */
 
 
 #banda {
     padding: 50px;
     margin: 0 2px;
-    background-color: rgba(0, 0, 0, 0.14);
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    color: black;
-    border-radius: 10px;
+    color: white;
 }
 
 .banda__cards {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 70px;
+    gap: 75px;
     flex-wrap: wrap;
 }
 
 .card {
-    padding: 25px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center ;
-    border: solid 2px rgba(0, 0, 0, 0.116);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border: solid 2px rgba(255, 255, 255, 0.02);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.02);
     border-radius: 25px;
     transition: all 1.5s;
+}
+
+.card__info {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__items a {
+    color: rgba(255, 0, 149, 0.473);
 }
 
 .card:hover {
@@ -225,11 +271,12 @@
 }
 
 .card img {
-    margin: 20px;
+    margin: 15px 7px;
     width: 180px;
     height: 180px;
     border-radius: 15px;
 }
+
 
 /* FORMULARIO - CONTACTO */
 
@@ -247,7 +294,7 @@
     justify-content: center;
     align-items: center;
     gap: 125px;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse
 }
 
 .contacto ul {
@@ -431,6 +478,11 @@
         height: 75px;
     }
 
+    #hero {
+        margin: 75px 0;
+
+    }
+
     .h-navbar__items {
         opacity: 1;
         -webkit-animation: slide-up 0s, fadein 0s;
@@ -474,15 +526,38 @@
         transition: all .5s ease-in;
     }
 
+    #bio {
+        margin-bottom: 75px;
+    }
+
     .bio__info {
-        margin-top: 100px;
+        margin-top: 50px;
         flex-direction: column;
         gap: 25px;
+    }
+
+    .list_spotify {
+        margin: 50px;
+        margin-bottom: 100px;
+        padding: 150px 0;
+        background-color: white;
+        box-shadow: 0 0 20px rgba(238, 133, 133, 0.7);
+        border-radius: 0%;
     }
 
 }
 
 @media (max-width: 615px) {
+
+    .list_spotify {
+        margin: 100px 0;
+        margin-top: 50px;
+        padding: 50px 0 50px 0;
+        background-color: black;
+        color: white;
+        border-radius: 0%;
+    }
+
 
     #banda {
         padding: 0;
@@ -492,6 +567,8 @@
     }
 
     .card {
+        border: solid 2px rgba(0, 0, 0, 0.137);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         color: black;
     }
 
